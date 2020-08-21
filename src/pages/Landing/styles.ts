@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { forSlideRight } from '@react-navigation/stack/lib/typescript/src/TransitionConfigs/HeaderStyleInterpolators';
 
 const styles = StyleSheet.create({
 
@@ -26,6 +27,28 @@ const styles = StyleSheet.create({
     titleBold: {
         fontFamily: 'Poppins_600SemiBold',
     },
+
+    signin: {
+        backgroundColor: '#E5E5E5',
+        marginVertical: 40,
+        height: 58,
+        alignItems: 'center',
+        justifyContent: 'center',
+        padding: 20,
+        maxWidth: 240,
+        borderRadius: 8,
+        resizeMode: 'contain',
+        right: '-10%',
+        
+        
+    },
+
+    signinText: {
+        fontSize:16,
+        fontFamily: 'Archivo_700Bold',
+    
+    },
+
 
 });
 
