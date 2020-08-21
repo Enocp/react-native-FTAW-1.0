@@ -6,6 +6,7 @@ import { Archivo_400Regular, Archivo_700Bold, useFonts } from '@expo-google-font
 import { Poppins_400Regular, Poppins_600SemiBold} from '@expo-google-fonts/poppins';
 import { NavigationContainer } from '@react-navigation/native';
 import Routes from './src/pages/routes';
+import AppStack from './src/pages/routes/AppStack';
 
 export default function App() {
   let [fontsLoaded]=useFonts({
@@ -21,7 +22,7 @@ export default function App() {
 
   return (
     <>
-    <Landing />
+    <AppStack />
     < StatusBar style="auto"/>
     </>
   );

@@ -3,9 +3,16 @@ import { View, Image,Text, TouchableOpacity } from 'react-native';
 import styles from './styles';
 import landing from '../../assets/images/images/frame00.png';
 import { RectButton } from 'react-native-gesture-handler';
+import { useNavigation } from '@react-navigation/native'
 
 
 function Landing() {
+
+    const { navigate } = useNavigation();
+
+    function handlerNavigateToSignIn() {
+        navigate('SignIn');
+    }
     
     return (
      
@@ -17,9 +24,12 @@ function Landing() {
 
              </Text>
 
-             <RectButton style={styles.signin}>
+             <TouchableOpacity 
+             onPress={handlerNavigateToSignIn}
+             style={styles.signin}
+             >
                  <Text style ={styles.signinText}>Sign in</Text>
-             </RectButton>
+             </TouchableOpacity>
         </View>
      ); 
 
