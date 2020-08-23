@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
         padding: 40
     },
 
-    banner: {
+    logo: {
         width: '90%',
         resizeMode: 'contain',
     },

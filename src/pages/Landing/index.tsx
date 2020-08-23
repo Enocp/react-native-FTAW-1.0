@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Image,Text, TouchableOpacity } from 'react-native';
 import styles from './styles';
-import landing from '../../assets/images/images/frame00.png';
+import logoImage from '../../assets/images/images/frame00.png';
 import { RectButton } from 'react-native-gesture-handler';
 import { useNavigation } from '@react-navigation/native'
 
@@ -17,7 +17,7 @@ function Landing() {
     return (
      
         <View style={styles.container} >
-             <Image source={landing} style={styles.banner}/>
+             <Image source={logoImage} style={styles.logo}/>
              <Text style={styles.title}>
                  Seja bem-vindo, {'\n'}
                  <Text style={styles.titleBold}> A qui é sua plataforma de buscar</Text>

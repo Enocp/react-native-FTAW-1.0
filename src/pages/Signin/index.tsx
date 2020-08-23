@@ -1,18 +1,20 @@
-import 'react-native-gesture-handler';
+import React from 'react';
+import { View } from 'react-native';
 
-import React  from 'react';
-import {View, Button, StyleSheet} from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
+import styles from './styles';
+import PageHeader from '../../components/PageHeader';
+import SigninItem from '../../components/SingnItem';
 
-
-const styles = StyleSheet.create ({
-    container: {flex: 1, justifyContent: 'center'},
-});
-
-const SignIn: React.FC = () => (
+function SignIn () {
+    return (
     
-     <View>
-         <Button title="Sign in" onPress={() => {}} />
-     </View>
-);
-export default SignIn
+        <View style={ styles.container} >
+            <PageHeader />
+            
+        <SigninItem />
+        </View>
+    )
+
+}
+
+export default SignIn;

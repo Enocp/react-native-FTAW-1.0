@@ -1,5 +1,5 @@
 import React from 'react';
-import SignIn from '../Signin';
+import SignIn from '../..pages/Signin';
 
 import { createStackNavigator } from '@react-navigation/stack';
 
